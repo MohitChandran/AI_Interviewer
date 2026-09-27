@@ -1,6 +1,6 @@
 # AI Interview Bot
 
-[![CI](https://github.com/REPO_SLUG/actions/workflows/ci.yml/badge.svg)](https://github.com/REPO_SLUG/actions/workflows/ci.yml)
+[![CI](https://github.com/MohitChandran/AI_Interviewer/actions/workflows/ci.yml/badge.svg)](https://github.com/MohitChandran/AI_Interviewer/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/python-3.10%20%7C%203.12-blue)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
@@ -81,8 +81,8 @@ sequenceDiagram
 **Prerequisites:** Python 3.10+ and API keys for [Groq](https://console.groq.com), [Deepgram](https://console.deepgram.com) and [ElevenLabs](https://elevenlabs.io). All three have free tiers.
 
 ```bash
-git clone https://github.com/REPO_SLUG.git
-cd REPO_NAME
+git clone https://github.com/MohitChandran/AI_Interviewer.git
+cd AI_Interviewer
 
 python -m venv .venv
 source .venv/bin/activate
