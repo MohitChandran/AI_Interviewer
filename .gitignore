@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Runtime artifacts
+uploads/
+data/
+outputs/
+*.log
+*.mp3
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Interview Bot</title>
+    <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Interview Bot</h1>
+            <p class="subtitle">Live voice interviews tailored to your resume</p>
+        </header>
+
+        <div class="main-content">
+            <!-- Candidate Form Section -->
+            <div class="form-section" id="formSection">
+                <h2>Candidate Information</h2>
+                <form id="candidateForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Enter your name" />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="you@example.com" />
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Role Applied For</label>
+                        <input type="text" id="role" name="role" required placeholder="e.g., Software Engineer" />
+                    </div>
+                    <div class="form-group">
+                        <label for="resume">Upload Resume (PDF)</label>
+                        <input type="file" id="resume" name="resume" accept=".pdf" required />
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="uploadBtn">Upload & Prepare</button>
+                </form>
+                <div id="uploadStatus" class="status-message"></div>
+            </div>
+
+            <!-- Interview Section (Hidden Initially) -->
+            <div class="interview-section" id="interviewSection" style="display: none;">
+                <div class="interview-header">
+                    <h2>Interview Session</h2>
+                    <div class="status-indicator" id="statusIndicator">
+                        <span class="status-dot"></span>
+                        <span id="statusText">Ready</span>
+                    </div>
+                </div>
+
+                <div class="chat-window" id="chatWindow">
+                    <div class="chat-message system">
+                        <strong>System:</strong> Click "Start Interview" to begin.
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <button class="btn btn-success" id="startBtn">Start Interview</button>
+                    <button class="btn btn-danger" id="stopBtn" style="display: none;">End Interview</button>
+                </div>
+            </div>
+
+            <!-- Evaluation (shown after the interview ends) -->
+            <div class="evaluation-section" id="evaluationSection" hidden>
+                <h2>Interview Evaluation</h2>
+                <div id="evaluationBody"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/js/app.js"></script>
+</body>
+</html>
